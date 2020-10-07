@@ -20,7 +20,7 @@ namespace AIBasedImageManager
         public List<Bitmap> getImages(string query, int start)
         {
             
-            var client = new RestClient("https://www.googleapis.com/customsearch/v1?key=AIzaSyBxO2HnSU4a-txTlUjs9VT91RF-cS8Ivgg&cx=015213456621888088621:lsvzcrvhumx&q="+query+"&searchType=image&start="+start);
+            var client = new RestClient("https://www.googleapis.com/customsearch/v1?key=<KEY_HERE>&cx=<CX ID HERE>&q="+query+"&searchType=image&start="+start);
             var request = new RestRequest(Method.GET)
             {
                 UseDefaultCredentials = true
